@@ -5,7 +5,7 @@ import { SidenavComponent } from "./sidenav/sidenav.component";
 import { BodyComponent } from './body/body.component';
 
 interface SideNavToggle {
-  screemWidth:number;
+  screenWidth:number;
   collapsed:boolean;
 }
 @Component({
@@ -21,7 +21,7 @@ export class AppComponent {
   isSideNavCollapsed = false
 
   onToggleSideNav(data: SideNavToggle): void {
-    this.screenWidth= data.screemWidth;
+    this.screenWidth= data.screenWidth;
     this.isSideNavCollapsed = data.collapsed
   }
 }
