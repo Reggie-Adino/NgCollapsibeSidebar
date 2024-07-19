@@ -10,6 +10,8 @@
         <i class="sidenav-link-icon" [class]="data.icon"></i>
         <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
       </a>
+      <app-sublevel-menu [data]="data" [collapsed]="collapsed">
+      </app-sublevel-menu>
     </li>
   </ul>
 </div>
